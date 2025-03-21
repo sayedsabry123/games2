@@ -1,0 +1,169 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.game-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.game-card {
+    width: 120px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.game-card h2 {
+    font-size: 14px;
+    color: #333;
+}
+
+.game-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#game-title {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 16px;
+    color: #e74c3c;
+    margin-bottom: 5px;
+}
+
+.options button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.options button:hover {
+    transform: scale(1.1);
+}
+
+#score-board {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+#back-btn {
+    margin-top: 15px;
+    background: linear-gradient(135deg, #f1c40f, #e67e22);
+    padding: 8px 15px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#back-btn:hover {
+    transform: scale(1.1);
+}
+
+#color-palette button {
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#coloring-image {
+    transition: filter 0.3s ease;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 5px;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
